@@ -1,0 +1,140 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+.component{
+    background-color: hsl(213, 19%, 18%);
+    width: 80vw;
+    border-radius: 5%;
+    padding: 1rem;
+    transition: all 0.2s ease-out; 
+}
+.component--textcentered{
+    text-align: center;
+}
+
+.component--hidden{
+   display: none !important;
+}
+
+.component__img--centered{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.component--circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 17%, 21%);
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 0.5rem 0;
+}
+
+.component__submitedrate{
+    display: inline-block;
+    padding: 0.5rem 0.7rem 0.3rem;
+    border-radius: 28px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsla(25, 100%, 59%, 0.786);
+    background-color: hsl(213 19% 23%) ;
+
+}
+
+.component__submitedrate p{
+    margin: 0;
+}
+
+.component__title{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.component__description{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color:hsl(217, 12%, 63%);
+    margin: 0 0 1.2rem;
+}
+
+.component__submitbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.component__submitbtn button{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    flex: 1;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 28px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+}
+
+.component__submitbtn button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.component__submitbtn button:active{
+    position:relative ;
+    top:1px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating__item:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating__item--selected{
+    background-color:   hsl(217, 12%, 63%) ;
+}
+
+.rating__item--error{
+    border: solid 2px hsl(0, 100%, 50%);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media (min-width:960px){
+    .component{
+        width: 22vw;
+    }
+
+    .component__submitbtn button{
+        padding: 0.7rem;
+    }
+ }
